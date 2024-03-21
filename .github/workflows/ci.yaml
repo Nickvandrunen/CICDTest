@@ -58,8 +58,8 @@ jobs:
       - name: Build image and push it to the registry
         id: build-image
         env:
-          CONTAINER_REGISTRY: ghcr.io/fourco-ffgm
-          CONTAINER_REPOSITORY: fourco-cicd
+          CONTAINER_REGISTRY: ghcr.io/Nickvandrunen
+          CONTAINER_REPOSITORY: CICDTest
           IMAGE_TAG: ${{ github.sha }}
         run: |
           cd hello-world-app
